@@ -18,6 +18,9 @@ body {
     min-height: 100vh;
 }
 
+p {
+    color: var(--grey);
+}
 
 h1 {
     background-color: var(--light-blue);
@@ -108,6 +111,32 @@ h1 {
     color: var(--light-blue);
 }
 
+/* Proyectos */
+.proyectos {
+    background-color: var(--light-blue);
+    padding: 2%;
+    margin: 2%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.headers-proyectos {
+    color: var(--white);
+    margin: 2% 4%;
+    color: var(--white);
+}
+
+.nexlock {
+    background-color: var(--dark-blue);
+    padding: 2%;
+    margin: 2% auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
 /* Contacto */
 
 footer.contact {
@@ -119,7 +148,7 @@ footer.contact {
     background-color: var(--dark-blue);
     color: var(--white);
     text-align: center;
-    padding: 2% 0;
+    padding: 1% 0;
     margin-top: 2%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
