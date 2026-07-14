@@ -7,23 +7,43 @@
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
-    <div class="catalog">
-        <a href="" type="_blank">Inicio</a>
-    </div>
-    <h1>Mi portafolio</h1>
+
+    <nav class="catalog">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="inicio">Mi portafolio</h1>
     <div class="card">
         <img class="profile-picture" src="https://media.licdn.com/dms/image/v2/D4D03AQHd0K_K-LL8dQ/profile-displayphoto-crop_800_800/B4DZ4ie_0VI4AI-/0/1778695012776?e=1785369600&v=beta&t=O5QJaKFPm75aNXu0oo1hWGPhdhBUjnrLgeEgLKDX5E4" alt="Joaquin Racamato">
-        <h2>Sobre mí</h2>
-        <p>Bienvenido a mi portafolio</p>
-        <p>Me llamo Joaquin, tengo 18 años y soy desarrollador web. Tengo experiencia en HTML, CSS y JavaScript.</p>
+        <div class="content">
+            <h2 id="sobre-mi" class="about-me">Sobre mí</h2>
+            <div class="paragraph">
+                <p>Bienvenido a mi portafolio</p>
+                <p>Me llamo Joaquin, tengo 18 años y soy desarrollador web. Tengo experiencia en HTML, CSS y JavaScript.</p>
+            </div>
+        </div>
     </div>
-    <div class="fondo">
-        <a class="linkedin-img images" target="_blank" href="https://www.linkedin.com/in/joaquinracamato/">
-            <img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="LinkedIn">Linkedin
-        </a>
-        <a class="github-img images" href="https://github.com/joacoraca" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"> Github
-        </a>
-    </div>
+    
+    <!-- Sección de contacto -->
+    <footer id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <p>Podes ponerte en contacto conmigo a través de:</p>
+        <div class="social-links">
+            <a class="linkedin-img images" target="_blank" href="https://www.linkedin.com/in/joaquinracamato/">
+                <img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="LinkedIn"> LinkedIn
+            </a>
+            <a class="github-img images" href="https://github.com/joacoraca" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/128/2111/2111432.png" alt="GitHub"> GitHub
+            </a>
+            <a href="mailto:racamatojoaquin@gmail.com" target="_blank">            
+                    <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="Gmail"> Email
+            </a>
+        </div>
+    </footer>
 </body>
 </html>

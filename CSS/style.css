@@ -1,34 +1,141 @@
 :root {
     --white: #F2F2F2;
-    --light-bourdeau: #732F3B;
-    --red: #73030D;
-    --grey: #8C8C8C;
+    --light-blue: #3A7CA5;
+    --blue: #1F4E78;
+    --dark-blue: #0D2C40;
+    --grey: #B0BEC5;
     --black: #0D0D0D;
-
 }
 
 body {
     background-color: var(--white);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--black);
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-    background-color: var(--light-bourdeau);
-    color: var(--grey);
+    background-color: var(--light-blue);
+    color: var(--white);
     padding: 1% 2%;
     text-align: center;
-    border-radius: 10px;
-    margin: 1% 35%;
-    border: 3px solid var(--red);
+    border-radius: 15px;
+    margin: 2% auto;
+    border: 3px solid var(--blue);
     box-sizing: border-box;
+    width: fit-content;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card {
-    background-color: var(--light-bourdeau);   
-    border-radius: 30px;
-    width:auto;
+    display: flex;
+    gap: 2%;
+    background-color: var(--light-blue);
+    border-radius: 20px;
+    width: auto;
+    padding: 2%;
+    margin: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-picture {
-    width: 35%;
+    width: 30%;
+    padding: 2%;
+    border-radius: 50%;
+    background-color: var(--blue);
+    margin: 2% 3%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-me {
+    background-color: var(--blue);
+    padding: 2%;
+    margin: 2% 4%;
+    color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.paragraph {
+    background-color: var(--dark-blue);
+    font-size: 18px;
+    color: var(--grey);
+    padding: 2% 3%;
+    margin: 3%;
+    text-align: justify;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paragraph:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Catálogo */
+.catalog {
+    background-color: var(--blue);
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.catalog ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.catalog ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.catalog ul li a:hover {
+    color: var(--light-blue);
+}
+
+/* Contacto */
+.contact {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 2% 0;
+    margin-top: 2%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+.contact .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.contact .social-links a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.contact .social-links a:hover {
+    color: var(--light-blue);
 }
