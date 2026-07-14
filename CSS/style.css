@@ -1,0 +1,34 @@
+:root {
+    --white: #F2F2F2;
+    --light-bourdeau: #732F3B;
+    --red: #73030D;
+    --grey: #8C8C8C;
+    --black: #0D0D0D;
+
+}
+
+body {
+    background-color: var(--white);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    background-color: var(--light-bourdeau);
+    color: var(--grey);
+    padding: 1% 2%;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1% 35%;
+    border: 3px solid var(--red);
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: var(--light-bourdeau);   
+    border-radius: 30px;
+    width:auto;
+}
+
+.profile-picture {
+    width: 35%;
+}
