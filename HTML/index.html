@@ -1,74 +1,353 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Dev</title>
+    <title>Joaquín Racamato | Portfolio Full Stack Developer</title>
+    <meta name="description" content="Portfolio personal de Joaquín Racamato, desarrollador Full Stack en formación. Especializado en sistemas IoT, ESP32, Firebase y desarrollo web con HTML, CSS, JavaScript y React.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
 
-    <nav class="catalog">
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+    <!-- Fondo de Efecto de Luces Flotantes -->
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
 
-    <h1 id="inicio">Mi portafolio</h1>
-    <div class="card">
-        <img class="profile-picture" src="https://media.licdn.com/dms/image/v2/D4D03AQHd0K_K-LL8dQ/profile-displayphoto-crop_800_800/B4DZ4ie_0VI4AI-/0/1778695012776?e=1785369600&v=beta&t=O5QJaKFPm75aNXu0oo1hWGPhdhBUjnrLgeEgLKDX5E4" alt="Joaquin Racamato">
-        <div class="content">
-            <h2 id="sobre-mi" class="about-me">Sobre mí</h2>
-            <div class="paragraph">
-                <p>Bienvenido a mi portafolio</p>
-                <p>Me llamo Joaquin, tengo 18 años y aprendiendo para ser un desarrollador full stack. Me apasiona la tecnología y la programación, y estoy constantemente buscando oportunidades para mejorar mis habilidades y aprender nuevas tecnologías.</p>
-                <p>En este portafolio, encontrarás una selección de mis proyectos y trabajos anteriores, que reflejan mi experiencia y habilidades en el desarrollo web y de software. Estoy emocionado de compartir mi trabajo y espero que encuentres algo que te inspire o te interese.</p>
+    <!-- Encabezado y Navegación -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#inicio" class="logo">
+                <span class="logo-accent">&lt;</span>Joaco<span class="logo-accent">.dev /&gt;</span>
+            </a>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <div id="proyectos" class="proyectos">
-        <h2>Mis proyectos</h2>
-        <div class="lista-proyectos">
-            <div class="nexlock proyecto">
-                <h3>NexLock</h3>
-                <div class="nexlock-content content"> 
-                    <div class="nexlock-paragraph proyecto-paragraph">
-                    <p>
-                    NexLock es un sistema inteligente de control de acceso desarrollado como proyecto de electrónica, diseñado para mejorar la seguridad mediante la combinación de hardware embebido y servicios en la nube. El sistema utiliza un ESP32 y un ESP32-CAM para gestionar la autenticación de usuarios a través de reconocimiento facial y un código PIN, permitiendo autorizar o denegar el acceso de forma automática.
-                    </p>
-                    <p>
-                    La solución integra una cerradura motorizada, captura de imágenes en tiempo real y comunicación con un backend en Firebase, donde se realiza la verificación facial y se almacenan los registros de acceso. Además, incorpora sensores para detectar el estado de la puerta y ejecutar el cierre automático una vez que esta vuelve a cerrarse.
-                    </p>
-                    <p>
-                    Con este proyecto adquirí experiencia en sistemas embebidos, programación de microcontroladores, integración con servicios en la nube, comunicación Wi-Fi, diseño de hardware y desarrollo de soluciones IoT orientadas a la seguridad.
-                    </p>
-                    </div>
-                    <img class="nexlock-img proyecto-images" src="../IMAGENES/nexlock-icon.jpeg" alt="">
+    <main class="main-content">
+        <!-- Hero / Inicio Section -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-container reveal">
+                <div class="hero-badge">Disponible para nuevos proyectos</div>
+                <h1 class="hero-title">Hola, soy <span class="text-gradient">Joaquín Racamato</span></h1>
+                <p class="hero-subtitle">Desarrollador Full Stack en Formación & Entusiasta de IoT</p>
+                <p class="hero-description">
+                    Tengo 18 años y me apasiona construir soluciones tecnológicas completas, conectando el mundo físico mediante sistemas embebidos e IoT con interfaces web modernas, dinámicas e interactivas.
+                </p>
+                <div class="hero-cta">
+                    <a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactar</a>
                 </div>
             </div>
-        </div>
-    </div>
-    
-    <!-- Sección de contacto -->
-    <footer id="contacto" class="contact">
-        <h2>Contacto</h2>
-        <p>Podes ponerte en contacto conmigo a través de:</p>
-        <div class="social-links">
-            <a class="linkedin-img" target="_blank" href="https://www.linkedin.com/in/joaquinracamato/">
-                <img class="footer-images" src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="LinkedIn"> LinkedIn
-            </a>
-            <a class="github-link" href="https://github.com/joacoraca" target="_blank">
-                <img class="footer-images" src="https://cdn-icons-png.flaticon.com/128/2111/2111432.png" alt="GitHub"> GitHub
-            </a>
-            <a class="email-link" href="mailto:racamatojoaquin@gmail.com" target="_blank">            
-                    <img class="footer-images" src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="Gmail"> Email
-            </a>
+        </section>
+
+        <!-- Sobre mí Section -->
+        <section id="sobre-mi" class="section sobre-mi-section">
+            <div class="container">
+                <h2 class="section-title reveal">Sobre mí</h2>
+                <div class="about-grid reveal">
+                    <div class="profile-card glow-card">
+                        <div class="profile-img-wrapper">
+                            <img class="profile-picture" src="https://media.licdn.com/dms/image/v2/D4D03AQHd0K_K-LL8dQ/profile-displayphoto-crop_800_800/B4DZ4ie_0VI4AI-/0/1778695012776?e=1785369600&v=beta&t=O5QJaKFPm75aNXu0oo1hWGPhdhBUjnrLgeEgLKDX5E4" alt="Joaquín Racamato">
+                        </div>
+                        <div class="profile-info">
+                            <h3>Joaquín Racamato</h3>
+                            <p class="profile-role">Full Stack Developer Student</p>
+                            <div class="profile-meta">
+                                <span class="meta-item"><strong>Edad:</strong> 18 años</span>
+                                <span class="meta-item"><strong>Ubicación:</strong> Argentina</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-text-card card-glass glow-card">
+                        <div class="card-body">
+                            <p class="accent-paragraph">¡Bienvenido a mi portafolio!</p>
+                            <p>
+                                Me apasiona la tecnología y la programación. Estoy constantemente buscando oportunidades para mejorar mis habilidades, aprender nuevas tecnologías y aplicar mis conocimientos en proyectos desafiantes que resuelvan problemas reales.
+                            </p>
+                            <p>
+                                Mi enfoque combina el desarrollo de software moderno con la ingeniería de hardware. Me motiva entender el funcionamiento de los sistemas desde sus capas más bajas (microcontroladores y electrónica) hasta el desarrollo de interfaces web amigables y seguras en la nube.
+                            </p>
+                            <div class="skills-highlight">
+                                <span class="badge-tech">Aprendizaje rápido</span>
+                                <span class="badge-tech">Resolución de problemas</span>
+                                <span class="badge-tech">Proactividad</span>
+                                <span class="badge-tech">Sistemas IoT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades Section -->
+        <section id="habilidades" class="section habilidades-section">
+            <div class="container">
+                <h2 class="section-title reveal">Habilidades</h2>
+                <p class="section-subtitle reveal">Tecnologías con las que trabajo y mi nivel de dominio actual</p>
+                
+                <div class="skills-grid reveal">
+                    <!-- HTML -->
+                    <div class="skill-card card-glass glow-card">
+                        <div class="skill-icon-wrapper html-color">
+                            <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0zm17.3 6.1H7.8l.2 2.7h10.4l-.3 3.3-3.6 1-3.6-1-.2-2.3H8.1l.4 4.8 5.7 1.6 5.7-1.6.9-9.5z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <h3>HTML5</h3>
+                                <span class="skill-level-badge level-intermediate">Intermedio</span>
+                            </div>
+                            <p class="skill-desc">Estructuras semánticas, accesibilidad web, SEO básico y maquetación web sólida.</p>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="skill-card card-glass glow-card">
+                        <div class="skill-icon-wrapper css-color">
+                            <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0zM12 18.2l4.8-1.3.5-5.6H12v-2.7h7.9l.1-1.3H7.5l.6 6.6H12v4.3z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <h3>CSS3</h3>
+                                <span class="skill-level-badge level-intermediate">Intermedio</span>
+                            </div>
+                            <p class="skill-desc">Diseño responsivo (Flexbox, Grid), variables CSS, animaciones y transiciones premium.</p>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JS -->
+                    <div class="skill-card card-glass glow-card">
+                        <div class="skill-icon-wrapper js-color">
+                            <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M0 0h24v24H0V0zm22.034 18.268c-.175-1.127-.899-2.007-2.327-2.617-1.396-.583-2.072-.892-2.072-1.572 0-.583.473-.911 1.259-.911.758 0 1.272.304 1.637.892.247-.417.842-1.368.842-1.368-.535-.788-1.332-1.353-2.656-1.353-2.203 0-3.693 1.282-3.693 3.197 0 2.213 1.83 2.87 3.593 3.593 1.27.535 1.554.892 1.554 1.488 0 .684-.582 1.139-1.614 1.139-1.171 0-1.897-.569-2.261-1.396-.065.111-.842 1.464-.842 1.464.717.996 1.797 1.614 3.738 1.614 2.502 0 4.195-1.284 4.195-3.528v-.004zm-8.318.525c-.092-.93-.655-1.597-1.572-2.015-1.07-.487-1.685-.758-1.685-1.336 0-.498.423-.787 1.05-.787.652 0 1.085.258 1.395.748.188-.34.698-1.13.698-1.13-.427-.638-1.054-1.082-2.115-1.082-1.848 0-3.076.993-3.076 2.554 0 1.802 1.492 2.378 2.923 2.977 1.042.433 1.258.733 1.258 1.22 0 .565-.465.922-1.284.922-.962 0-1.517-.464-1.815-1.127l-.025.044-.658 1.082c.575.823 1.437 1.326 2.987 1.326 2.013 0 3.393-1.01 3.393-2.91v-.006z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <h3>JavaScript</h3>
+                                <span class="skill-level-badge level-intermediate">Intermedio</span>
+                            </div>
+                            <p class="skill-desc">Manipulación del DOM, ES6+, llamadas asíncronas (Fetch, APIs), y lógica interactiva.</p>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- React -->
+                    <div class="skill-card card-glass glow-card">
+                        <div class="skill-icon-wrapper react-color">
+                            <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 22.8c-1.3 0-2.5-.2-3.7-.5-4.4-1.2-7.2-4.5-7.2-8.3 0-3.8 2.8-7.1 7.2-8.3 2.4-.7 4.9-.7 7.2 0 4.4 1.2 7.2 4.5 7.2 8.3 0 3.8-2.8 7.1-7.2 8.3-1.1.3-2.3.5-3.5.5zm0-20.6c-3.6 0-6.2 2.6-6.2 5.8 0 3.2 2.6 5.8 6.2 5.8s6.2-2.6 6.2-5.8c0-3.2-2.6-5.8-6.2-5.8zm0 8.4c-1.4 0-2.6-1.2-2.6-2.6S10.6 5.4 12 5.4s2.6 1.2 2.6 2.6-1.2 2.6-2.6 2.6z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <h3>React.js</h3>
+                                <span class="skill-level-badge level-basic">Básico</span>
+                            </div>
+                            <p class="skill-desc">Creación de componentes funcionales, manejo de hooks (`useState`, `useEffect`) y estado.</p>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos Section -->
+        <section id="proyectos" class="section proyectos-section">
+            <div class="container">
+                <h2 class="section-title reveal">Mis proyectos</h2>
+                <p class="section-subtitle reveal">Trabajos desarrollados aplicando mis conocimientos de software y hardware</p>
+                
+                <div class="lista-proyectos reveal">
+                    <!-- Proyecto NexLock -->
+                    <div class="proyecto-card card-glass glow-card">
+                        <div class="proyecto-header">
+                            <div class="proyecto-title-area">
+                                <span class="proyecto-badge">Proyecto Destacado</span>
+                                <h3>NexLock</h3>
+                                <p class="proyecto-tagline">Sistema Inteligente de Control de Acceso IoT</p>
+                            </div>
+                            <div class="proyecto-tech-tags">
+                                <span class="badge-tech">ESP32</span>
+                                <span class="badge-tech">ESP32-CAM</span>
+                                <span class="badge-tech">Firebase</span>
+                                <span class="badge-tech">Firestore</span>
+                                <span class="badge-tech">JavaScript</span>
+                                <span class="badge-tech">HTML5/CSS3</span>
+                            </div>
+                        </div>
+                        
+                        <div class="proyecto-content-layout">
+                            <div class="proyecto-description">
+                                <p>
+                                    <strong>NexLock</strong> es un sistema inteligente de control de acceso físico que fusiona el desarrollo de software moderno en la nube con hardware embebido. Diseñado como proyecto de electrónica avanzada, ofrece una solución de seguridad robusta y en tiempo real.
+                                </p>
+                                
+                                <h4 class="sub-title-details">¿Cómo funciona el ecosistema NexLock?</h4>
+                                <ul class="proyecto-details-list">
+                                    <li>
+                                        <strong>Hardware Embebido (ESP32 / ESP32-CAM):</strong> Gestiona la autenticación mediante lectura de código PIN y reconocimiento facial, y controla una cerradura motorizada con sensores que detectan el estado de la puerta para aplicar un cierre automático inteligente.
+                                    </li>
+                                    <li>
+                                        <strong>Base de Datos y Autenticación (Firebase):</strong> Utiliza Firebase para sincronizar en tiempo real el estado del cerrojo, almacenar imágenes de intentos de acceso sospechosos o autorizados, y guardar logs históricos en Firestore.
+                                    </li>
+                                    <li>
+                                        <strong>Panel Web Administrativo (Frontend):</strong> Un panel web construido en JavaScript puro donde los administradores pueden registrar usuarios, autorizar accesos remotamente, visualizar estadísticas en vivo (tasa de éxito de accesos, intentos fallidos) y monitorear logs en tiempo real.
+                                    </li>
+                                </ul>
+
+                                <div class="proyecto-actions">
+                                    <a href="https://github.com/joacoraca/NexLock-" target="_blank" class="btn-project btn-github">
+                                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                        Código en GitHub
+                                    </a>
+                                    <a href="https://nexlock-24aed.web.app/" target="_blank" class="btn-project btn-live">
+                                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                        Ver Web en Vivo
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="proyecto-media">
+                                <div class="img-container">
+                                    <img class="nexlock-img" src="../IMAGENES/nexlock-icon.jpeg" alt="NexLock Control System Dashboard">
+                                    <div class="img-overlay">
+                                        <span>ESP32 & Firebase Smart Access</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section id="contacto" class="section contacto-section">
+            <div class="container reveal">
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-subtitle">¿Tenes alguna consulta o queres trabajar conmigo? Escribime</p>
+                
+                <div class="contacto-grid">
+                    <!-- Formulario de contacto -->
+                    <div class="contacto-form-card card-glass glow-card">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="form-name">Nombre</label>
+                                <input type="text" id="form-name" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email</label>
+                                <input type="email" id="form-email" placeholder="tu@correo.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Mensaje</label>
+                                <textarea id="form-message" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+                        </form>
+                    </div>
+
+                    <!-- Información de redes -->
+                    <div class="contacto-info-card card-glass glow-card">
+                        <h3>Información de Contacto</h3>
+                        <p class="contacto-text">
+                            Podes ponerte en contacto conmigo a través de mis redes sociales o enviándome un correo directo. Responderé lo antes posible.
+                        </p>
+                        
+                        <div class="social-list">
+                            <a class="social-item linkedin" target="_blank" href="https://www.linkedin.com/in/joaquinracamato/">
+                                <div class="social-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </div>
+                                <div class="social-details">
+                                    <span class="social-label">LinkedIn</span>
+                                    <span class="social-value">joaquinracamato</span>
+                                </div>
+                            </a>
+                            
+                            <a class="social-item github" target="_blank" href="https://github.com/joacoraca">
+                                <div class="social-icon">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </div>
+                                <div class="social-details">
+                                    <span class="social-label">GitHub</span>
+                                    <span class="social-value">joacoraca</span>
+                                </div>
+                            </a>
+
+                            <a class="social-item email" href="mailto:racamatojoaquin@gmail.com" target="_blank">
+                                <div class="social-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="social-details">
+                                    <span class="social-label">Email</span>
+                                    <span class="social-value">racamatojoaquin@gmail.com</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 Joaquín Racamato. Todos los derechos reservados.</p>
+            <p class="footer-subtext">Diseñado con ❤️ usando HTML, CSS y JS Vanilla.</p>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="../JS/app.js"></script>
 </body>
 </html>
