@@ -1,6 +1,6 @@
-/* ==========================================================================
+/*
    SISTEMA DE DISEÑO & VARIABLES
-   ========================================================================== */
+ */
 :root {
     /* Colores Principales (Tema Oscuro Premium) */
     --bg-dark: #080b16;
@@ -38,9 +38,9 @@
     --glow-primary: 0 0 20px rgba(139, 92, 246, 0.25);
 }
 
-/* ==========================================================================
+/*
    RESET & ESTILOS GLOBALES
-   ========================================================================== */
+ */
 * {
     margin: 0;
     padding: 0;
@@ -115,9 +115,9 @@ a {
     transition: var(--transition-fast);
 }
 
-/* ==========================================================================
+/*
    ESTILOS DE REVELACIÓN (SCROLL ANIMATIONS)
-   ========================================================================== */
+ */
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -130,9 +130,9 @@ a {
     transform: translateY(0);
 }
 
-/* ==========================================================================
+/*
    HEADER Y MENÚ DE NAVEGACIÓN
-   ========================================================================== */
+ */
 .header {
     position: fixed;
     top: 0;
@@ -195,7 +195,7 @@ a {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--accent-gradient);
+    background: var(--accent-secondary);
     transition: var(--transition-normal);
 }
 
@@ -239,9 +239,9 @@ a {
     transform: translateY(-9px) rotate(-45deg);
 }
 
-/* ==========================================================================
+/*
    BOTONES Y ELEMENTOS DE INTERFAZ
-   ========================================================================== */
+ */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -255,7 +255,7 @@ a {
 }
 
 .btn-primary {
-    background: var(--accent-gradient);
+    background: var(--accent-secondary);
     color: var(--text-main);
     border: none;
     box-shadow: var(--glow-secondary);
@@ -293,9 +293,9 @@ a {
     font-family: var(--font-mono);
 }
 
-/* ==========================================================================
+/*
    ESTILO GLASSMORPHIC & CURSOR GLOW
-   ========================================================================== */
+ */
 .card-glass {
     background: var(--bg-card);
     border: 1px solid var(--border-card);
@@ -331,9 +331,9 @@ a {
     pointer-events: none;
 }
 
-/* ==========================================================================
+/*
    HERO / INICIO SECTION
-   ========================================================================== */
+ */
 .hero-section {
     min-height: 100vh;
     display: flex;
@@ -359,7 +359,6 @@ a {
     font-weight: 600;
     border-radius: 30px;
     margin-bottom: 24px;
-    animation: pulseGlow 2s infinite alternate;
 }
 
 .hero-title {
@@ -370,7 +369,7 @@ a {
 }
 
 .text-gradient {
-    background: var(--accent-gradient);
+    background: var(--accent-secondary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -395,9 +394,9 @@ a {
     justify-content: center;
 }
 
-/* ==========================================================================
+/*
    SOBRE MÍ SECTION
-   ========================================================================== */
+ */
 .section-title {
     font-size: 36px;
     text-align: center;
@@ -410,7 +409,7 @@ a {
     display: block;
     width: 60px;
     height: 4px;
-    background: var(--accent-gradient);
+    background: var(--accent-secondary);
     margin: 16px auto 0;
     border-radius: 2px;
 }
@@ -451,7 +450,7 @@ a {
     border-radius: 50%;
     margin-bottom: 24px;
     padding: 4px;
-    background: var(--accent-gradient);
+    background: var(--accent-secondary);
     box-shadow: var(--glow-secondary);
 }
 
@@ -514,9 +513,9 @@ a {
     gap: 10px;
 }
 
-/* ==========================================================================
+/*
    HABILIDADES SECTION
-   ========================================================================== */
+ */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -630,14 +629,12 @@ a {
 
 .progress-bar {
     height: 100%;
-    background: var(--accent-gradient);
+    background: var(--accent-secondary);
     border-radius: 3px;
     box-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
 }
 
-/* ==========================================================================
-   PROYECTOS SECTION (NEXLOCK DESTACADO)
-   ========================================================================== */
+/*PROYECTOS SECTION (NEXLOCK DESTACADO)*/
 .proyecto-card {
     padding: 48px;
 }
@@ -752,7 +749,7 @@ a {
 }
 
 .btn-live {
-    background: var(--accent-gradient);
+    background: var(--accent-secondary);
     color: var(--text-main);
     box-shadow: var(--glow-secondary);
 }
@@ -823,9 +820,9 @@ a {
     font-family: var(--font-mono);
 }
 
-/* ==========================================================================
+/*
    CONTACTO SECTION
-   ========================================================================== */
+ */
 .contacto-grid {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -949,9 +946,9 @@ a {
     background: rgba(6, 182, 212, 0.1);
 }
 
-/* ==========================================================================
+/*
    PIE DE PÁGINA (FOOTER)
-   ========================================================================== */
+ */
 .footer-bottom {
     background-color: #04060c;
     border-top: 1px solid var(--border-card);
@@ -972,9 +969,9 @@ a {
     color: rgba(255, 255, 255, 0.2);
 }
 
-/* ==========================================================================
+/*
    COMPONENTES ADICIONALES (TOAST & LOADERS)
-   ========================================================================== */
+ */
 /* Toast Notification */
 .toast-notification {
     position: fixed;
@@ -1028,9 +1025,9 @@ a {
     vertical-align: middle;
 }
 
-/* ==========================================================================
+/*
    ANIMACIONES KEYFRAMES
-   ========================================================================== */
+ */
 @keyframes pulseGlow {
     0% {
         box-shadow: 0 0 10px rgba(6, 182, 212, 0.1);
@@ -1049,9 +1046,9 @@ a {
     }
 }
 
-/* ==========================================================================
+/*
    RESPONSIVIDAD (MEDIA QUERIES)
-   ========================================================================== */
+ */
 @media (max-width: 1024px) {
     .about-grid {
         grid-template-columns: 1.1fr 1.9fr;

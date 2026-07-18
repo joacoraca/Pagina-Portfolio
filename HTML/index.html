@@ -16,9 +16,6 @@
 </head>
 <body>
 
-    <!-- Fondo de Efecto de Luces Flotantes -->
-    <div class="bg-glow-1"></div>
-    <div class="bg-glow-2"></div>
 
     <!-- Encabezado y Navegación -->
     <header class="header">
@@ -50,7 +47,7 @@
         <section id="inicio" class="hero-section">
             <div class="hero-container reveal">
                 <div class="hero-badge">Disponible para nuevos proyectos</div>
-                <h1 class="hero-title">Hola, soy <span class="text-gradient">Joaquín Racamato</span></h1>
+                <h1 class="hero-title">Joaquín <span class="logo-accent">Racamato</span></h1>
                 <p class="hero-subtitle">Desarrollador Full Stack en Formación & Entusiasta de IoT</p>
                 <p class="hero-description">
                     Tengo 18 años y me apasiona construir soluciones tecnológicas completas, conectando el mundo físico mediante sistemas embebidos e IoT con interfaces web modernas, dinámicas e interactivas.
@@ -74,6 +71,7 @@
                         <div class="profile-info">
                             <h3>Joaquín Racamato</h3>
                             <p class="profile-role">Full Stack Developer Student</p>
+                            <p class="profile-role">Técnico Electrónico</p>
                             <div class="profile-meta">
                                 <span class="meta-item"><strong>Edad:</strong> 18 años</span>
                                 <span class="meta-item"><strong>Ubicación:</strong> Argentina</span>
@@ -92,7 +90,7 @@
                             <div class="skills-highlight">
                                 <span class="badge-tech">Aprendizaje rápido</span>
                                 <span class="badge-tech">Resolución de problemas</span>
-                                <span class="badge-tech">Proactividad</span>
+                                <span class="badge-tech">Trabajo en equipo</span>
                                 <span class="badge-tech">Sistemas IoT</span>
                             </div>
                         </div>
@@ -111,9 +109,7 @@
                     <!-- HTML -->
                     <div class="skill-card card-glass glow-card">
                         <div class="skill-icon-wrapper html-color">
-                            <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0zm17.3 6.1H7.8l.2 2.7h10.4l-.3 3.3-3.6 1-3.6-1-.2-2.3H8.1l.4 4.8 5.7 1.6 5.7-1.6.9-9.5z"/>
-                            </svg>
+                            <img src="../IMAGENES/HTML5.png" alt="HTML5 Logo" class="skill-icon html-logo">
                         </div>
                         <div class="skill-info">
                             <div class="skill-header">
@@ -122,7 +118,7 @@
                             </div>
                             <p class="skill-desc">Estructuras semánticas, accesibilidad web, SEO básico y maquetación web sólida.</p>
                             <div class="progress-bar-container">
-                                <div class="progress-bar" style="width: 75%;"></div>
+                                <div class="progress-bar" style="width: 50%;"></div>
                             </div>
                         </div>
                     </div>
@@ -130,9 +126,7 @@
                     <!-- CSS -->
                     <div class="skill-card card-glass glow-card">
                         <div class="skill-icon-wrapper css-color">
-                            <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0zM12 18.2l4.8-1.3.5-5.6H12v-2.7h7.9l.1-1.3H7.5l.6 6.6H12v4.3z"/>
-                            </svg>
+                            <img src="../IMAGENES/CSS3.png" alt="CSS3 Logo" class="skill-icon css-logo">
                         </div>
                         <div class="skill-info">
                             <div class="skill-header">
@@ -141,7 +135,7 @@
                             </div>
                             <p class="skill-desc">Diseño responsivo (Flexbox, Grid), variables CSS, animaciones y transiciones premium.</p>
                             <div class="progress-bar-container">
-                                <div class="progress-bar" style="width: 75%;"></div>
+                                <div class="progress-bar" style="width: 50%;"></div>
                             </div>
                         </div>
                     </div>
@@ -149,9 +143,7 @@
                     <!-- JS -->
                     <div class="skill-card card-glass glow-card">
                         <div class="skill-icon-wrapper js-color">
-                            <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M0 0h24v24H0V0zm22.034 18.268c-.175-1.127-.899-2.007-2.327-2.617-1.396-.583-2.072-.892-2.072-1.572 0-.583.473-.911 1.259-.911.758 0 1.272.304 1.637.892.247-.417.842-1.368.842-1.368-.535-.788-1.332-1.353-2.656-1.353-2.203 0-3.693 1.282-3.693 3.197 0 2.213 1.83 2.87 3.593 3.593 1.27.535 1.554.892 1.554 1.488 0 .684-.582 1.139-1.614 1.139-1.171 0-1.897-.569-2.261-1.396-.065.111-.842 1.464-.842 1.464.717.996 1.797 1.614 3.738 1.614 2.502 0 4.195-1.284 4.195-3.528v-.004zm-8.318.525c-.092-.93-.655-1.597-1.572-2.015-1.07-.487-1.685-.758-1.685-1.336 0-.498.423-.787 1.05-.787.652 0 1.085.258 1.395.748.188-.34.698-1.13.698-1.13-.427-.638-1.054-1.082-2.115-1.082-1.848 0-3.076.993-3.076 2.554 0 1.802 1.492 2.378 2.923 2.977 1.042.433 1.258.733 1.258 1.22 0 .565-.465.922-1.284.922-.962 0-1.517-.464-1.815-1.127l-.025.044-.658 1.082c.575.823 1.437 1.326 2.987 1.326 2.013 0 3.393-1.01 3.393-2.91v-.006z"/>
-                            </svg>
+                            <img src="../IMAGENES/JavaScript.png" alt="JavaScript Logo" class="skill-icon javascript-logo">
                         </div>
                         <div class="skill-info">
                             <div class="skill-header">
@@ -160,7 +152,7 @@
                             </div>
                             <p class="skill-desc">Manipulación del DOM, ES6+, llamadas asíncronas (Fetch, APIs), y lógica interactiva.</p>
                             <div class="progress-bar-container">
-                                <div class="progress-bar" style="width: 75%;"></div>
+                                <div class="progress-bar" style="width: 50%;"></div>
                             </div>
                         </div>
                     </div>
@@ -168,9 +160,7 @@
                     <!-- React -->
                     <div class="skill-card card-glass glow-card">
                         <div class="skill-icon-wrapper react-color">
-                            <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 22.8c-1.3 0-2.5-.2-3.7-.5-4.4-1.2-7.2-4.5-7.2-8.3 0-3.8 2.8-7.1 7.2-8.3 2.4-.7 4.9-.7 7.2 0 4.4 1.2 7.2 4.5 7.2 8.3 0 3.8-2.8 7.1-7.2 8.3-1.1.3-2.3.5-3.5.5zm0-20.6c-3.6 0-6.2 2.6-6.2 5.8 0 3.2 2.6 5.8 6.2 5.8s6.2-2.6 6.2-5.8c0-3.2-2.6-5.8-6.2-5.8zm0 8.4c-1.4 0-2.6-1.2-2.6-2.6S10.6 5.4 12 5.4s2.6 1.2 2.6 2.6-1.2 2.6-2.6 2.6z"/>
-                            </svg>
+                            <img src="../IMAGENES/React.png" alt="React.js Logo" class="skill-icon react-logo">
                         </div>
                         <div class="skill-info">
                             <div class="skill-header">
@@ -179,7 +169,7 @@
                             </div>
                             <p class="skill-desc">Creación de componentes funcionales, manejo de hooks (`useState`, `useEffect`) y estado.</p>
                             <div class="progress-bar-container">
-                                <div class="progress-bar" style="width: 40%;"></div>
+                                <div class="progress-bar" style="width: 25%;"></div>
                             </div>
                         </div>
                     </div>
@@ -250,7 +240,7 @@
                             </div>
                             <div class="proyecto-media">
                                 <div class="img-container">
-                                    <img class="nexlock-img" src="../IMAGENES/nexlock-icon.jpeg" alt="NexLock Control System Dashboard">
+                                    <img class="nexlock-img" src="../IMAGENES/" alt="NexLock Control System Dashboard">
                                     <div class="img-overlay">
                                         <span>ESP32 & Firebase Smart Access</span>
                                     </div>
@@ -343,7 +333,7 @@
     <footer class="footer-bottom">
         <div class="container">
             <p>&copy; 2026 Joaquín Racamato. Todos los derechos reservados.</p>
-            <p class="footer-subtext">Diseñado con ❤️ usando HTML, CSS y JS Vanilla.</p>
+            <p class="footer-subtext">Diseñado con cariño usando HTML, CSS y JS Vanilla. De Raca</p>
         </div>
     </footer>
 
